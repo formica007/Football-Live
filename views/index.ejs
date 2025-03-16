@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/online-channels.css">
+</head>
+<body>
+    <h1>Football Live</h1>
+    <div id="current-date" class="date-display">Tutte le partite del <span id="today-date"></span></div>
+    <div class="refresh-time">Ultimo aggiornamento: <span id="last-update">-</span></div>
+
+    <div id="pin-form">
+        <input type="password" id="pin" placeholder="Inserisci il PIN">
+        <button id="login-btn">Accedi</button>
+        <div id="attempts-counter">Tentativi rimasti: <span id="attempts-left">5</span></div>
+    </div>
+
+    <div id="welcome-message"></div>
+    <div id="welcome-developer">Benvenuto sviluppatore Lucs</div>
+    
+    <div id="blocked">
+        <h3>Accesso bloccato</h3>
+        <p>Riprova tra <span id="block-timer"></span></p>
+    </div>
+    <div id="block-popup">Sito bloccato per 30 minuti!</div>
+
+    <!-- Rimosso il menu di selezione dei campionati -->
+
+    <div id="matches-container" style="display: none;">
+        <div id="matches-list" class="matches-list">
+            <!-- Le partite verranno inserite qui dinamicamente -->
+        </div>
+    </div>
+
+    <div class="footer">
+        Serie A | Premier League | La Liga | Bundesliga | Ligue 1
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/adblock.js"></script>
+    <script src="/js/mobile-debug.js"></script>
+</body>
+</html>
